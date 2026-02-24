@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Тренажер НЦТ: Главное меню</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f7f6; 
+            color: #333; 
+            padding: 15px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .menu-container { 
+            background: white; 
+            max-width: 600px; 
+            width: 100%; 
+            padding: 25px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1 { color: #2c3e50; font-size: 1.8rem; margin-bottom: 10px; line-height: 1.3;}
+        p.subtitle { color: #666; margin-bottom: 30px; font-size: 16px; }
+        
+        .grid-menu {
+            display: grid;
+            grid-template-columns: 1fr; /* Одна колонка на узких экранах */
+            gap: 15px;
+        }
+
+        /* Если экран шире 400px, делаем две колонки для красоты */
+        @media (min-width: 400px) {
+            .grid-menu {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .menu-btn {
+            display: block;
+            background: #e9ecef;
+            color: #333;
+            text-decoration: none;
+            padding: 20px 15px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.2s;
+            border: 2px solid transparent;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .menu-btn:hover { background: #dcdcdc; }
+        .menu-btn:active { background: #c0c0c0; transform: scale(0.98); }
+        
+        /* Выделяем первые два варианта цветом, так как они уже готовы */
+        .ready {
+            background: #007bff;
+            color: white;
+        }
+        .ready:hover { background: #0056b3; }
+        .ready:active { background: #004085; }
+
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+    <h1>Тренажер НЦТ 🎓</h1>
+    <p class="subtitle">Олигофренопедагогика<br>Выберите вариант для тренировки:</p>
+
+    <div class="grid-menu">
+        <a href="var1.html" class="menu-btn ready">Вариант 1</a>
+        <a href="var2.html" class="menu-btn ready">Вариант 2</a>
+        <a href="var3.html" class="menu-btn">Вариант 3</a>
+        <a href="var4.html" class="menu-btn">Вариант 4</a>
+        <a href="var5.html" class="menu-btn">Вариант 5</a>
+        <a href="var6.html" class="menu-btn">Вариант 6</a>
+        <a href="var7.html" class="menu-btn">Вариант 7</a>
+        <a href="var8.html" class="menu-btn">Вариант 8</a>
+    </div>
+</div>
+
+</body>
+</html>
